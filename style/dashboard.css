@@ -1,0 +1,309 @@
+.dashboard {
+    display: flex;
+}
+
+.dashboard__sidebar {
+    margin-right: 50px;
+}
+
+.dashboard__sidebarListHead{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    padding: 10px;
+}
+.dashboard__sidebarListHead > li {
+    color: rgb(16, 16, 248);
+    margin: 10px;
+    padding: 10px;
+}
+
+.dashboard__sidebarList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    padding: 10px;
+}
+
+.dashboard__sidebarList span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard__sidebarList > li {
+    margin: 10px;
+    padding: 5px;
+
+    color: darkgray;
+}
+
+.dashboard__sidebarList > li:hover {
+    cursor: pointer;
+    color: black;
+    border-right: 2px solid blue;
+    font-weight: 600;
+}
+
+.dashboard__sidebarButton {
+    margin: 10px;
+    padding: 10px;
+}
+
+.dashboard__sidebarButton > button {
+    background-color: rgb(76, 76, 228);
+    color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+/* Dashboard main section */
+.dashboard__mainImage > img {
+    width: 35%;
+    margin-left: 10px;
+}
+
+.dashboard__mainHeader > h3 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.dashboard__main {
+    margin-left: 10px;
+    background-color: whitesmoke;
+    padding: 0 20px 0 30px
+}
+
+.dashboard__mainImage{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(76, 76, 228);
+
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px
+}
+
+.dashboard__mainImage > p, h1, a{
+    color: white;
+}
+
+.dashboard__mainSeeAll {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.dashboard__mainSeeAll a{
+    color: black;
+}
+
+.dashboard__mainCard {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.card1 > h1 {
+    color: black;
+    margin: 20px;
+}
+
+.card__size p {
+    margin-top: -22px;
+}
+
+.recruit__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recruit__title h1{
+    color: black;
+}
+
+.dashboard__recruitProgress {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.recruit__title button {
+    margin: 25px 19px;
+    padding: 7px 35px;
+    background-color: rgb(89, 89, 233);
+    color: white;
+    border-radius: 10px;
+}
+
+/* table style */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* background-color: #04AA6D; */
+    color: gray;
+    text-transform: capitalize;
+  }
+
+  /* calender */
+  .calender__applicant{
+    background-color: whitesmoke;
+  }
+
+  .dashboard__calender {
+      background-color: white;
+      margin-top: 10px;
+
+      background-color: white;
+    margin-top: 62px;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-radius: 20px
+  }
+
+  /* calender */
+
+  * {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  /* padding: 70px 25px; */
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  /* color: white; */
+  font-size: 20px;
+  text-transform: uppercase;
+  /* letter-spacing: 3px; */
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  /* background-color: #ddd; */
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  /* color: #666; */
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  /* background: #eee; */
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  /* color: #777; */
+}
+
+.days li .active {
+  padding: 5px;
+  background: whitesmoke;
+  /* color: white !important */
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+/* avatar */
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h1, a{
+    color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile h3{
+    /* font-size: 21; */
+    font-weight: 400;
+}
+
+.dashboard__applicant {
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    margin-left: 18px;
+    border-radius: 10px;
+}

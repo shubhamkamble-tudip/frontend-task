@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/dashboard.css">
+    <title>6-Dashboard 5</title>
+</head>
+<body>
+
+    <!-- main dashboard -->
+   <div class="dashboard">
+        <!-- dashboard sidebar -->
+        <div class="dashboard__sidebar">
+            <!-- dashboard sidebar list -->
+            <div class="dashboard__sidebarListHead">
+                <li>Impozitions</li>
+            </div>
+            <div class="dashboard__sidebarList">
+                <li><span><i class="fa fa-columns"></i> Dashboard</span></li>
+                <li><span><i class="fa fa-user"></i> Recruitment</span></li>
+                <li><span><i class="fa fa-tasks"></i> Onboarding</span></li>
+                <li><span><i class="fa fa-tasks"></i> Recruitment tasks</span></li>
+                <li><span><i class="fa fa-calendar"></i> Calender</span></li>
+                <li><span><i class="fa fa-cog"></i> Settings</span></li>
+            </div>
+            <!-- sidebar button -->
+            <div class="dashboard__sidebarButton">
+                <button>Start chat</button>
+            </div>
+
+        </div>
+        <!-- dashboard main section -->
+        <div class="dashboard__main">
+            <!-- dashboard header -->
+            <div class="dashboard__mainHeader">
+                <h3>Dashboard</h3>
+                <!-- dashboard image -->
+                <div class="dashboard__mainImage">
+                    <h1>Hello Katie!</h1>
+                    <p>You have 16 new applicatios. It is a lot of work for today! So let's start.</p>
+
+                    <a href="#">review it!</a>
+                    <!-- <img src="./images/adv.png" alt="introduction image"> -->
+                    
+                </div>
+
+                <div class="dashboard__mainSeeAll">
+                    <h2>You need me</h2>
+                    <a href="#">see all</a>
+                </div>
+
+                <div class="dashboard__mainCard">
+                    <div class="card1">
+                        <h1>3</h1>
+                        <div class="card__size">
+                            <h3>Content Designers</h3>
+                            <p>(5 condidates)</p>
+                        </div>
+                        <div class="progress__bar">
+                            progress_bar
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h1>9</h1>
+                        <div class="card__size">
+                            <h3>Node.js Developers</h3>
+                            <p>(12 condidates)</p>
+                        </div>
+                        <div class="progress__bar">
+                            progress_bar
+                        </div>                     
+                    </div>
+
+                </div>
+
+                <div class="dashboard__mainCard">
+                    <div class="card1">
+                        <h1>1</h1>
+                        <div class="card__size">
+                            <h3>Senior UI Designer</h3>
+                            <p>(0 condidates)</p>
+                        </div>
+                        <div class="progress__bar">
+                            progress_bar
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <h1>2</h1>
+                        <div class="card__size">
+                            <h3>Marketing Manager</h3>
+                            <p>(10 condidates)</p>
+                        </div>
+                        <div class="progress__bar">
+                            progress_bar
+                        </div>  
+                    </div>
+
+                </div>
+
+                <!-- Recruitment process -->
+                <div class="dashboard__recruitProgress">
+                    <div class="recruit__title">
+                        <h1>Recruitment Progress</h1>
+                        <button>See all</button>
+                    </div>
+                    <div class="recruit__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>full name</th>
+                                    <th>profession</th>
+                                    <th>status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>UI Designer</td>
+                                    <td>Tech interview</td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>UI Designer</td>
+                                    <td>Tech interview</td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>UI Designer</td>
+                                    <td>Tech interview</td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>UI Designer</td>
+                                    <td>Tech interview</td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>UI Designer</td>
+                                    <td>Tech interview</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>   
+                
+            </div>
+        </div>
+
+        <!-- calender and new applicant -->
+        <div class="calender__applicant">
+            <div class="dashboard__calender">
+
+                <div class="month">      
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>
+                        March
+                        <span style="font-size:18px">2021</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+                  
+                  <ul class="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span class="active">10</span></li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                  </ul>
+                  
+            </div>
+
+            <div class="dashboard__applicant">
+                <div class="heading">
+                    <h1>New Applicants</h1>
+                    <a href="#">see all</a>
+                </div>
+                <div class="profile">
+                    <img src="#" alt="Avatar">
+                    <h3>Lewis Cunningham</h3>
+
+                </div>
+                <div class="profile">
+                    <img src="#" alt="Avatar">
+                    <h3>Lewis Cunningham</h3>
+
+                </div>
+                <div class="profile">
+                    <img src="#" alt="Avatar">
+                    <h3>Lewis Cunningham</h3>
+
+                </div>
+                <div class="profile">
+                    <img src="#" alt="Avatar">
+                    <h3>Lewis Cunningham</h3>
+
+                </div>
+                <div class="profile">
+                    <img src="#" alt="Avatar">
+                    <h3>Lewis Cunningham</h3>
+
+                </div>
+            </div>
+
+        </div>
+   </div>
+    
+</body>
+</html>
